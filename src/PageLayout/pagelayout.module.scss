@@ -1,0 +1,24 @@
+@mixin flex-utils($justifyProd, $alignProd) {
+    display: flex;
+    justify-content: $justifyProd;
+    align-items: $alignProd;
+}
+
+.home {
+    @include flex-utils(start, start);
+    min-height: 100vh;
+    width: 100%;
+}
+.pages-container {
+    padding: 64px 0px 52px 0px;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+    .home {
+        flex-direction: column;
+    }
+}

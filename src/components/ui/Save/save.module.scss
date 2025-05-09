@@ -1,0 +1,46 @@
+.save-cirlce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #10141e75;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    cursor: pointer;
+    z-index: 2;
+    svg {
+        transition: all 0.5s ease;
+    }
+}
+
+.save-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #10141e75;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    cursor: pointer;
+    z-index: 2;
+    svg {
+        fill: #ffffff;
+    }
+}
+
+@media (max-width: 760px) {
+    .save-cirlce {
+        right: 10px;
+        top: 10px;
+    }
+    .save-active {
+        right: 10px;
+        top: 10px;
+    }
+}
