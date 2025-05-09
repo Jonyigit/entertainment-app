@@ -1,10 +1,9 @@
 import { Router } from "./router/Router";
-import "./styles/global.module.scss";
-import appStyle from "./styles/app.module.scss";
+import "./styles/global.scss";
 
 function App() {
     return (
-        <div className={appStyle.app}>
+        <div>
             <Router />
         </div>
     );
